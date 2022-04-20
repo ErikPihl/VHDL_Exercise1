@@ -19,6 +19,7 @@
 -----------------------------------------------------------------------------------------
 library IEEE;
 use IEEE.std_logic_1164.all;
+use IEEE.numeric_std.all;
 
 entity Exercise1_tb is
 end entity;
@@ -60,22 +61,10 @@ begin
    ---------------------------------------------------------------------------------
    process is
    begin
-      switch <= "000";
-      wait for 10 ns;
-      switch <= "001";
-      wait for 10 ns;
-      switch <= "010";
-      wait for 10 ns;
-      switch <= "011";
-      wait for 10 ns;
-      switch <= "100";
-      wait for 10 ns;
-      switch <= "101";
-      wait for 10 ns;
-      switch <= "110";
-      wait for 10 ns;
-      switch <= "111";
-      wait for 10 ns;
+      for i in 0 to 7 loop
+			switch <= std_logic_vector(to_unsigned(i, 3));
+			wait for 10 ns;
+		end loop;
       wait;
    end process;
 
