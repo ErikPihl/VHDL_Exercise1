@@ -62,9 +62,9 @@ begin
    process is
    begin
       for i in 0 to 7 loop
-			switch <= std_logic_vector(to_unsigned(i, 3));
-			wait for 10 ns;
-		end loop;
+         switch <= std_logic_vector(to_unsigned(i, 3));
+         wait for 10 ns;
+      end loop;
       wait;
    end process;
 
