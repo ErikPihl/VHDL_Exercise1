@@ -1,7 +1,7 @@
 -----------------------------------------------------------------------------------------
 -- Modulen Exercise1_tb används som testbänk för modulen Exercise1_tb, som består av 
 -- tre insignaler switch[2:0] samt två utsignaler led[1:0]. Sanningstabellen för modulen 
--- modulen Exercise1 visas nedan:
+-- Exercise1 visas nedan:
 --
 -- switch[2:0]   led[1:0]
 --    000           00
@@ -13,9 +13,9 @@
 --    110           10
 --    111           11
 --
--- I denna modul deklareras signaler med samma namn som toppmodulens I/O-portar. Varje
--- kombination av insignaler switch[2:0] testas en efter en under 10 ns, där utsignaler
--- led kontrolleras via simulering i ModelSim.
+-- I denna testbänk deklareras signaler med samma namn som toppmodulens I/O-portar. 
+-- Varje kombination av insignaler switch[2:0] testas en efter en under 10 ns, där 
+-- utsignaler led[1:0] kontrolleras via simulering i ModelSim.
 -----------------------------------------------------------------------------------------
 library IEEE;
 use IEEE.std_logic_1164.all;
