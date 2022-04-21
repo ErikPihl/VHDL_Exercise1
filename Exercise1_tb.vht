@@ -1,5 +1,5 @@
 -----------------------------------------------------------------------------------------
--- Modulen Exercise1_tb används som testbänk för modulen Exercise_tb, som består av 
+-- Modulen Exercise1_tb används som testbänk för modulen Exercise1_tb, som består av 
 -- tre insignaler switch[2:0] samt två utsignaler led[1:0]. Sanningstabellen för modulen 
 -- modulen Exercise1 visas nedan:
 --
